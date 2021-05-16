@@ -38,7 +38,6 @@ function scrub(e) {
 }
 
 function handleFullScreen() {
-    console.log(this)
     video.requestFullscreen();
 }
 
