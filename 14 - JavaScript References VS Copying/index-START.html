@@ -11,6 +11,7 @@
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+    // const team = players;
 
     // and we want to make a copy of it.
 
@@ -27,6 +28,14 @@
     // So, how do we fix this? We take a copy instead!
 
     // one way
+    const team = players.slice();
+    console.log(players, team);
+
+    const team2 = [].concat(players);
+
+    const team3 = [...players];
+
+    const team4 = Array.from(players);
 
     // or create a new array and concat the old one in
 
